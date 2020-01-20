@@ -24,6 +24,7 @@ var gulp = require("gulp"),
     templateCache = require("gulp-angular-templatecache"),
     runSequence = require("run-sequence"),
     order = require("gulp-order"),
+    os = require('os'),
     print = require('gulp-print'),
     del = require("del"),
     livereload = require('gulp-livereload'),
@@ -271,6 +272,8 @@ gulp.task("scss-lint", [], function() {
 
     var sassFiles = paths.sass.concat(themes.current.customScss, ignore);
 
+    var tmpDir = 'gulp-cache-' + os.userInfo().username;
+
     return gulp.src(sassFiles)
         .pipe(gulpif(!isDeploy, cache(scsslint({endless: true, sync: true, config: ".scss-lint.yml"}), {
           success: function(scsslintFile) {
@@ -280,7 +283,11 @@ gulp.task("scss-lint", [], function() {
             return {
               scsslint: scsslintFile.scsslint
             };
-          }
+          },
+          fileCache: new cache.Cache({
+            tmpdir: os.tmpdir(),
+            cacheDirName: tmpDir
+          })
         })))
         .pipe(gulpif(fail, scsslint.failReporter()));
 });
@@ -555,8 +562,16 @@ gulp.task("coffee", function() {
 });
 
 gulp.task("moment-locales", function() {
+    replace_lang_path = { "zh-cn": "zh-hans",
+            "zh-tw": "zh-hant" }
+
     return gulp.src(paths.modules + "moment/locale/*")
         .pipe(gulpif(isDeploy, uglify()))
+        .pipe(rename(function (path) {
+            if (path.basename in replace_lang_path) {
+                path.basename = replace_lang_path[path.basename]
+            }
+        }))
         .pipe(gulp.dest(paths.distVersion + "locales/moment-locales/"));
 });
 

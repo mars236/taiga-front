@@ -14,6 +14,7 @@
         "UNLINK": "ניתוק קישור",
         "CREATE": "צור",
         "ADD": "הוסף",
+        "BACK": "הקודם",
         "COPY_TO_CLIPBOARD": "העתק ללוח",
         "COPIED_TO_CLIPBOARD": "טקסט הועתק ללוח",
         "EDIT": "ערוך",
@@ -146,6 +147,7 @@
             "TYPE": "טיפוס",
             "SEVERITY": "חומרה",
             "PRIORITY": "עדיות",
+            "ASSIGNED": "משוייך",
             "ASSIGNED_TO": "משוייך ל",
             "ASSIGNED_USERS": "משתמשים משויכים",
             "POINTS": "נקודות",
@@ -395,7 +397,12 @@
         "EMPTY_PROJECT_LIST": "עדיין אין לך שום פרוייקטים",
         "WORKING_ON_SECTION": "בביצוע",
         "WATCHING_SECTION": "במעקב",
-        "DASHBOARD": "לוּחַ מַחווָנִים של הפרוייקטים"
+        "DASHBOARD": "לוּחַ מַחווָנִים של הפרוייקטים",
+        "SET_HIDDEN": "Set as hidden",
+        "SET_VISIBLE": "Set as visible",
+        "NO_HIDDEN_ITEMS": "You have no hidden items",
+        "HIDE_HIDDEN": "Do not show hidden objects",
+        "SHOW_HIDDEN": "Show hidden objects"
     },
     "EPICS": {
         "TITLE": "אפיונים",
@@ -518,7 +525,7 @@
             "SELECT_VIDEOCONFERENCE": "בחר מערכת שיחות הועידה(וידאו)",
             "SALT_CHAT_ROOM": "הוסף ראשית שם לשם סביבת הצ'ט שלך",
             "JITSI_CHAT_ROOM": "Jitsi",
-            "APPEARIN_CHAT_ROOM": "AppearIn",
+            "WHEREBYCOM_CHAT_ROOM": "Whereby.com",
             "TALKY_CHAT_ROOM": "Talky",
             "CUSTOM_CHAT_ROOM": "מותאם אישית",
             "URL_CHAT_ROOM": "כתובת חדר הצ'אטים שלך"
@@ -777,7 +784,7 @@
             "INTEGRATIONS": "אינטגרציות"
         },
         "SUBMENU_PROJECT_VALUES": {
-            "STATUS": "סטטוס",
+            "STATUS": "סטאטוסים",
             "POINTS": "נקודות",
             "PRIORITIES": "עדיפויות",
             "SEVERITIES": "חומרות",
@@ -1088,6 +1095,11 @@
             "SELECT": "בחר שיוך",
             "SEARCH": "חפש משתמשים"
         },
+        "SELECT_USER": {
+            "SEARCH": "חפש משתמשים",
+            "REMOVE": "Remove user",
+            "ROLE": "תפקיד"
+        },
         "ADD_MEMBER": {
             "TITLE": "משתתף חדש",
             "PLACEHOLDER": "סנן משתמשים או כתוב מייל להזמינם",
@@ -1232,6 +1244,7 @@
         "PROMOTED_FROM_ISSUE": "סיפור המשתמש הזה צף מתוך התקלה:",
         "PROMOTED_FROM_TASK": "This US has been promoted from Task:",
         "TITLE_LINK_GO_TO_ISSUE": "עבור לתקלה",
+        "TITLE_LINK_GO_TO_TASK": "Go to task",
         "TITLE_DELETE_ACTION": "מחק סיפור משתמש",
         "LIGHTBOX_TITLE_BLOKING_US": "סיפור משתמש חסום",
         "NOT_ESTIMATED": "לא מתומחר",
@@ -1833,19 +1846,5 @@
             "ACTION_TITLE": "חיפוש",
             "RESULTS": "תוצאות חיפוש"
         }
-    },
-    "TIPS": {
-        "TIPS_TITLE": "עצה",
-        "TIP_PROJECTS_ORDER": "תוכל למיין פרוייקטים בדף הפרוייקט שלך על ידי הצבת אלה הנפוצים ביותר לגשת בראש",
-        "TIP_VOTING": "בין אם אתה שואל את הקהילה שלך או את חברי הצוות האחרים שלך, העלאת פריטים יכולה לשמש כדרך לאיתור תמיכה מפורשת במשימה מסוימת או בעיה מסוימת.",
-        "TIP_ISSUES_TO_SPRINT": "תוכל לשייך את הבעיה ל-Sprint ספציפי על ידי לחיצה לחיצת על סמל נעץ בתצוגה מפורטת.",
-        "TIP_DUE_DATE": "תצטרך לסיים משימה בתאריך ספציפי, הפעל את תאריך יעד מהתצוגה המפורטת של המשימה",
-        "TIP_IOCAIN": "תוכל לסמן לחברי הצוות שמשימה יכולה להיות בעייתית במיוחד על ידי ליחצה על כפתור iocaine. פעולה זו מעידה שאתה מברך עזרה, סבלנות והבנה",
-        "TIP_BLOCKED": "תוכל לסמן לחברי צוות אחרים שמשהו מונע ממך לעבוד על משימה מסוימת על ידי סימון \"חסום\"",
-        "TIP_PROMOTE": "האם הבעיה או המשימה שלך מורכבים יותר ממה שהיא הופיעה לראשונה? עבור לתצוגה מפורטמת והפוך אותך לסיפור משתמש",
-        "TIP_BULK": "האם תרצה להוסיף משימות רבות בו זמנית, בחר במצב תפזורת וכתוב כל משימה בשורה אחת, אחד אחרי השני.",
-        "TIP_ZOOM": "אתה יכול לקבל צפייה רחבה יותר של ה-Kanban על ידי צמצום המידע שמוצג בכרטיסיות עם בקרת הזום.",
-        "TIP_CUSTOM_FIELDS": "אם אתה מנהל של הפרוייקט, שקול ליצור שדות מותאמות אישי בכדי להרחיב את התצורה המשימות.",
-        "TIP_SLIDE_ARROWS": "תוכל לגלגל על תוצאות הרשימה, חיפוש או סינון על ידי לחיצה על חצי הניווט בתצוגה המפורטת של כל פריט אחד."
     }
 }

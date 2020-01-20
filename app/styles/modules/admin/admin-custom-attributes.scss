@@ -9,7 +9,7 @@
         border-bottom: 0;
     }
     .table-header {
-        @include font-type(bold);
+        @include font-type(semibold);
         border-bottom: 3px solid $whitish;
         .custom-name,
         .custom-description {
@@ -134,7 +134,8 @@
             width: 10px;
         }
     }
-    .js-form {
+    .js-form,
+    .js-new-custom-field:hover {
         .custom-options-wrapper {
             opacity: 1;
         }

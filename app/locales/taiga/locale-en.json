@@ -14,6 +14,7 @@
         "UNLINK": "Unlink",
         "CREATE": "Create",
         "ADD": "Add",
+        "BACK": "Back",
         "COPY_TO_CLIPBOARD": "Copy to clipboard",
         "COPIED_TO_CLIPBOARD": "Text has been copied to clipboard",
         "EDIT": "Edit",
@@ -146,6 +147,7 @@
             "TYPE": "Type",
             "SEVERITY": "Severity",
             "PRIORITY": "Priority",
+            "ASSIGNED": "Assigned",
             "ASSIGNED_TO": "Assigned to",
             "ASSIGNED_USERS": "Assigned users",
             "POINTS": "Points",
@@ -201,8 +203,8 @@
             "COUNTER_TITLE": "{total, plural, one{one vote} other{# votes}}"
         },
         "PROMOTE_TO_US": "Promote to User Story",
-        "PROMOTED_ISSUES": "This Issue has been promoted to US:",
-        "PROMOTED_TASKS": "This Task has been promoted to US:",
+        "PROMOTED_ISSUES": "This issue has been promoted to",
+        "PROMOTED_TASKS": "This task has been promoted to",
         "CONFIRM_PROMOTE": {
           "ISSUE": {
             "TITLE": "Promote this Issue to a new user story",
@@ -357,7 +359,7 @@
         "LINK_CANCEL": "Nah, take me back. I think I remember it.",
         "SUCCESS_TITLE": "Check your inbox!",
         "SUCCESS_TEXT": "We sent you an email with the instructions to set a new password",
-        "ERROR": "According to our Oompa Loompas, your are not registered yet."
+        "ERROR": "According to our Oompa Loompas, you are not registered yet."
     },
     "CHANGE_PASSWORD": {
         "PAGE_TITLE": "Change you password - Taiga",
@@ -395,7 +397,12 @@
         "EMPTY_PROJECT_LIST": "You don't have any projects yet",
         "WORKING_ON_SECTION": "Working on",
         "WATCHING_SECTION": "Watching",
-        "DASHBOARD": "Projects Dashboard"
+        "DASHBOARD": "Projects Dashboard",
+        "SET_HIDDEN": "Set as hidden",
+        "SET_VISIBLE": "Set as visible",
+        "NO_HIDDEN_ITEMS": "You have no hidden items",
+        "HIDE_HIDDEN": "Do not show hidden objects",
+        "SHOW_HIDDEN": "Show hidden objects"
     },
     "EPICS": {
         "TITLE": "EPICS",
@@ -518,7 +525,7 @@
             "SELECT_VIDEOCONFERENCE": "Select a videoconference system",
             "SALT_CHAT_ROOM": "Add a prefix to the chatroom name",
             "JITSI_CHAT_ROOM": "Jitsi",
-            "APPEARIN_CHAT_ROOM": "AppearIn",
+            "WHEREBYCOM_CHAT_ROOM": "Whereby.com",
             "TALKY_CHAT_ROOM": "Talky",
             "CUSTOM_CHAT_ROOM": "Custom",
             "URL_CHAT_ROOM": "URL of your chat room"
@@ -777,7 +784,7 @@
             "INTEGRATIONS": "Integrations"
         },
         "SUBMENU_PROJECT_VALUES": {
-            "STATUS": "Status",
+            "STATUS": "Statuses",
             "POINTS": "Points",
             "PRIORITIES": "Priorities",
             "SEVERITIES": "Severities",
@@ -1087,6 +1094,11 @@
         "ASSIGNED_TO": {
             "SELECT": "Select assigned to",
             "SEARCH": "Search for users"
+        },
+        "SELECT_USER": {
+            "SEARCH": "Search for users",
+            "REMOVE": "Remove user",
+            "ROLE": "Role"
         },
         "ADD_MEMBER": {
             "TITLE": "New Member",
@@ -1834,19 +1846,5 @@
             "ACTION_TITLE": "Search",
             "RESULTS": "Search results"
         }
-    },
-    "TIPS": {
-      "TIPS_TITLE": "Tip",
-      "TIP_PROJECTS_ORDER": "You can sort projects on your project page by placing the ones most frequently accessed at the top.",
-      "TIP_VOTING": "Whether you ask your community or your other team members, upvoting items might serve as a way to detect explicit support for a particular task or issue.",
-      "TIP_ISSUES_TO_SPRINT": "You can attach issues to a particular sprint by clicking on the pin icon in the detail view.",
-      "TIP_DUE_DATE": "If you need to finish a task on a specific date, activate the DueDate from the detail view of the task.",
-      "TIP_IOCAIN": "You can signal to team members that a task is being particularly troublesome by clicking on the iocaine button. Doing so indicates that you welcome help, patience and understanding.",
-      "TIP_BLOCKED": "You can signal to other team members that something is preventing you from working on a particular task by marking it as \"blocked\"",
-      "TIP_PROMOTE": "Is your issue or task more complex than it first appeared? Go to the detail view and turn it into user story.",
-      "TIP_BULK": "If you want to add many tasks at once, choose bulk mode and write each task in a single line, one after the other.",
-      "TIP_ZOOM": "You can get a wider view of the kanban by reducing the information shown on the cards with the zoom control.",
-      "TIP_CUSTOM_FIELDS": "If you're an admin of the project, consider creating custom fields to expand the tasks' configuration.",
-      "TIP_SLIDE_ARROWS": "You can cycle over the results of a list, search or filter by clicking on the navigational arrows on the detail view of any one item."
     }
 }

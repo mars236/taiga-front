@@ -14,6 +14,7 @@
         "UNLINK": "Avlänka",
         "CREATE": "Skapa",
         "ADD": "Lägg till",
+        "BACK": "Baksida",
         "COPY_TO_CLIPBOARD": "Copy to clipboard",
         "COPIED_TO_CLIPBOARD": "Texten är kopierad",
         "EDIT": "Redigera",
@@ -146,6 +147,7 @@
             "TYPE": "Typ",
             "SEVERITY": "Allvarsgrad",
             "PRIORITY": "Prioritet",
+            "ASSIGNED": "Tilldelad",
             "ASSIGNED_TO": "Tilldelad till",
             "ASSIGNED_USERS": "Assigned users",
             "POINTS": "Poäng",
@@ -395,7 +397,12 @@
         "EMPTY_PROJECT_LIST": "Du har inte än några projekt",
         "WORKING_ON_SECTION": "Arbetar med",
         "WATCHING_SECTION": "Bevakar",
-        "DASHBOARD": "Instrumentpanel för projekt"
+        "DASHBOARD": "Instrumentpanel för projekt",
+        "SET_HIDDEN": "Set as hidden",
+        "SET_VISIBLE": "Set as visible",
+        "NO_HIDDEN_ITEMS": "You have no hidden items",
+        "HIDE_HIDDEN": "Do not show hidden objects",
+        "SHOW_HIDDEN": "Show hidden objects"
     },
     "EPICS": {
         "TITLE": "EPOS",
@@ -518,7 +525,7 @@
             "SELECT_VIDEOCONFERENCE": "Välj videokonferenssystem",
             "SALT_CHAT_ROOM": "Add a prefix to the chatroom name",
             "JITSI_CHAT_ROOM": "Jitsi",
-            "APPEARIN_CHAT_ROOM": "Dyker upp i ",
+            "WHEREBYCOM_CHAT_ROOM": "Whereby.com",
             "TALKY_CHAT_ROOM": "Talky",
             "CUSTOM_CHAT_ROOM": "Anpassa",
             "URL_CHAT_ROOM": "Länken till ditt chattrum"
@@ -862,7 +869,7 @@
         "PRIVATE": "Privata projekt",
         "LOOKING_FOR_PEOPLE": "Detta projekt söker efter fler personer",
         "FANS_COUNTER_TITLE": "{total, plural, one{one fan} other{# fans}}",
-        "WATCHERS_COUNTER_TITLE": "{total, plural, en{one watcher} other{# watchers}}",
+        "WATCHERS_COUNTER_TITLE": "{total, plural, one{one watcher} other{# watchers}}",
         "MEMBERS_COUNTER_TITLE": "{total, plural, one{one member} other{# members}}",
         "BLOCKED_PROJECT": {
             "BLOCKED": "Blockerat projekt",
@@ -913,7 +920,7 @@
             "BUTTON_TITLE": "Visa projektet och lägg till egenskaper för avisering",
             "WATCH": "Visa",
             "WATCHING": "Bevakar",
-            "COUNTER_TITLE": "{total, plural, en{one watcher} other{# watchers}}",
+            "COUNTER_TITLE": "{total, plural, one{one watcher} other{# watchers}}",
             "OPTIONS": {
                 "NOTIFY_ALL": "Motta alla notifieringar",
                 "NOTIFY_ALL_TITLE": "Motta alla notifieringar för det här projektet",
@@ -1088,6 +1095,11 @@
             "SELECT": "Välj att tilldela till",
             "SEARCH": "Sök efter användare"
         },
+        "SELECT_USER": {
+            "SEARCH": "Sök efter användare",
+            "REMOVE": "Remove user",
+            "ROLE": "Roll"
+        },
         "ADD_MEMBER": {
             "TITLE": "Ny medlem",
             "PLACEHOLDER": "Filtrera användare eller skriv ett mail för att bjuda in",
@@ -1232,6 +1244,7 @@
         "PROMOTED_FROM_ISSUE": "Denna US har blivit flyttat från ärende: ",
         "PROMOTED_FROM_TASK": "This US has been promoted from Task:",
         "TITLE_LINK_GO_TO_ISSUE": "Gå till ärende",
+        "TITLE_LINK_GO_TO_TASK": "Go to task",
         "TITLE_DELETE_ACTION": "Ta bort användarhistorien",
         "LIGHTBOX_TITLE_BLOKING_US": "Blockera oss",
         "NOT_ESTIMATED": "Ej beräknad",
@@ -1833,19 +1846,5 @@
             "ACTION_TITLE": "Sök",
             "RESULTS": "Sökresultat"
         }
-    },
-    "TIPS": {
-        "TIPS_TITLE": "Tip",
-        "TIP_PROJECTS_ORDER": "You can sort projects on your project page by placing the ones most frequently accessed at the top.",
-        "TIP_VOTING": "Whether you ask your community or your other team members, upvoting items might serve as a way to detect explicit support for a particular task or issue.",
-        "TIP_ISSUES_TO_SPRINT": "You can attach issues to a particular sprint by clicking on the pin icon in the detail view.",
-        "TIP_DUE_DATE": "If you need to finish a task on a specific date, activate the DueDate from the detail view of the task.",
-        "TIP_IOCAIN": "You can signal to team members that a task is being particularly troublesome by clicking on the iocaine button. Doing so indicates that you welcome help, patience and understanding.",
-        "TIP_BLOCKED": "You can signal to other team members that something is preventing you from working on a particular task by marking it as \"blocked\"",
-        "TIP_PROMOTE": "Is your issue or task more complex than it first appeared? Go to the detail view and turn it into user story.",
-        "TIP_BULK": "If you want to add many tasks at once, choose bulk mode and write each task in a single line, one after the other.",
-        "TIP_ZOOM": "You can get a wider view of the kanban by reducing the information shown on the cards with the zoom control.",
-        "TIP_CUSTOM_FIELDS": "If you're an admin of the project, consider creating custom fields to expand the tasks' configuration.",
-        "TIP_SLIDE_ARROWS": "You can cycle over the results of a list, search or filter by clicking on the navigational arrows on the detail view of any one item."
     }
 }

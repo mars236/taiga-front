@@ -14,6 +14,7 @@
         "UNLINK": "Separar",
         "CREATE": "Criar",
         "ADD": "Adicionar",
+        "BACK": "Back",
         "COPY_TO_CLIPBOARD": "Copiar para área de transferência",
         "COPIED_TO_CLIPBOARD": "O texto foi copiado para a área de transferência",
         "EDIT": "Editar",
@@ -146,6 +147,7 @@
             "TYPE": "Tipo",
             "SEVERITY": "Gravidade",
             "PRIORITY": "Prioridade",
+            "ASSIGNED": "Atribuído",
             "ASSIGNED_TO": "Atribuído a",
             "ASSIGNED_USERS": "Usuários atribuídos",
             "POINTS": "Pontos",
@@ -395,7 +397,12 @@
         "EMPTY_PROJECT_LIST": "Você ainda não tem projetos",
         "WORKING_ON_SECTION": "Trabalhando em",
         "WATCHING_SECTION": "Observando",
-        "DASHBOARD": "Painel de Projetos"
+        "DASHBOARD": "Painel de Projetos",
+        "SET_HIDDEN": "Set as hidden",
+        "SET_VISIBLE": "Set as visible",
+        "NO_HIDDEN_ITEMS": "You have no hidden items",
+        "HIDE_HIDDEN": "Do not show hidden objects",
+        "SHOW_HIDDEN": "Show hidden objects"
     },
     "EPICS": {
         "TITLE": "ÉPICOS",
@@ -518,7 +525,7 @@
             "SELECT_VIDEOCONFERENCE": "Selecione um sistema de videoconferência",
             "SALT_CHAT_ROOM": "Adicionar um prefixo ao nome da sala de chat",
             "JITSI_CHAT_ROOM": "Jitsi",
-            "APPEARIN_CHAT_ROOM": "AppearIn",
+            "WHEREBYCOM_CHAT_ROOM": "Whereby.com",
             "TALKY_CHAT_ROOM": "Talky",
             "CUSTOM_CHAT_ROOM": "Personalizar",
             "URL_CHAT_ROOM": "URL da sua sala de bate-papo"
@@ -1088,6 +1095,11 @@
             "SELECT": "Selecionar assinalados para",
             "SEARCH": "Procurar por usuários"
         },
+        "SELECT_USER": {
+            "SEARCH": "Procurar por usuários",
+            "REMOVE": "Remove user",
+            "ROLE": "Função"
+        },
         "ADD_MEMBER": {
             "TITLE": "Novo Membro",
             "PLACEHOLDER": "Filtre usuários ou escreva um email para convidá-los",
@@ -1232,6 +1244,7 @@
         "PROMOTED_FROM_ISSUE": "Esta História de Usuário foi criada a partir do Problema:",
         "PROMOTED_FROM_TASK": "This US has been promoted from Task:",
         "TITLE_LINK_GO_TO_ISSUE": "Adicionar comentários aos apontamentos",
+        "TITLE_LINK_GO_TO_TASK": "Go to task",
         "TITLE_DELETE_ACTION": "Apagar história de usuário",
         "LIGHTBOX_TITLE_BLOKING_US": "História de usuário bloqueadora",
         "NOT_ESTIMATED": "Não estimado",
@@ -1833,19 +1846,5 @@
             "ACTION_TITLE": "Procurar",
             "RESULTS": "Resultado de pesquisa."
         }
-    },
-    "TIPS": {
-        "TIPS_TITLE": "Tip",
-        "TIP_PROJECTS_ORDER": "You can sort projects on your project page by placing the ones most frequently accessed at the top.",
-        "TIP_VOTING": "Whether you ask your community or your other team members, upvoting items might serve as a way to detect explicit support for a particular task or issue.",
-        "TIP_ISSUES_TO_SPRINT": "You can attach issues to a particular sprint by clicking on the pin icon in the detail view.",
-        "TIP_DUE_DATE": "If you need to finish a task on a specific date, activate the DueDate from the detail view of the task.",
-        "TIP_IOCAIN": "You can signal to team members that a task is being particularly troublesome by clicking on the iocaine button. Doing so indicates that you welcome help, patience and understanding.",
-        "TIP_BLOCKED": "You can signal to other team members that something is preventing you from working on a particular task by marking it as \"blocked\"",
-        "TIP_PROMOTE": "Is your issue or task more complex than it first appeared? Go to the detail view and turn it into user story.",
-        "TIP_BULK": "If you want to add many tasks at once, choose bulk mode and write each task in a single line, one after the other.",
-        "TIP_ZOOM": "You can get a wider view of the kanban by reducing the information shown on the cards with the zoom control.",
-        "TIP_CUSTOM_FIELDS": "If you're an admin of the project, consider creating custom fields to expand the tasks' configuration.",
-        "TIP_SLIDE_ARROWS": "You can cycle over the results of a list, search or filter by clicking on the navigational arrows on the detail view of any one item."
     }
 }

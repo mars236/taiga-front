@@ -14,6 +14,7 @@
         "UNLINK": "リンク解除",
         "CREATE": "作成",
         "ADD": "追加",
+        "BACK": "バックエンド",
         "COPY_TO_CLIPBOARD": "Copy to clipboard",
         "COPIED_TO_CLIPBOARD": "Text has been copied to clipboard",
         "EDIT": "編集",
@@ -146,6 +147,7 @@
             "TYPE": "タイプ",
             "SEVERITY": "深刻度",
             "PRIORITY": "優先度",
+            "ASSIGNED": "割当済",
             "ASSIGNED_TO": "割当",
             "ASSIGNED_USERS": "割当ユーザー",
             "POINTS": "ポイント",
@@ -194,11 +196,11 @@
             "UNWATCH": "フォローをやめる",
             "WATCHERS": "ウォッチャー",
             "BUTTON_TITLE": "この項目のフォローを有効/無効にする",
-            "COUNTER_TITLE": "{total, plural, one{one watcher} other{# 人がフォロー中}}"
+            "COUNTER_TITLE": "{total, plural, 1{one watcher} other{# 人がフォロー中}}"
         },
         "VOTE_BUTTON": {
             "BUTTON_TITLE": "賛成/反対の投票を行う",
-            "COUNTER_TITLE": "{total, plural, one{one vote} other{# 人が賛成}}"
+            "COUNTER_TITLE": "{total, plural, 1{one vote} other{# 人が賛成}}"
         },
         "PROMOTE_TO_US": "ユーザーストーリーに変更する",
         "PROMOTED_ISSUES": "This Issue has been promoted to US:",
@@ -395,7 +397,12 @@
         "EMPTY_PROJECT_LIST": "参加中のプロジェクトがありません",
         "WORKING_ON_SECTION": "取り組んでいる作業",
         "WATCHING_SECTION": "フォロー中",
-        "DASHBOARD": "プロジェクトのダッシュボート"
+        "DASHBOARD": "プロジェクトのダッシュボート",
+        "SET_HIDDEN": "Set as hidden",
+        "SET_VISIBLE": "Set as visible",
+        "NO_HIDDEN_ITEMS": "You have no hidden items",
+        "HIDE_HIDDEN": "Do not show hidden objects",
+        "SHOW_HIDDEN": "Show hidden objects"
     },
     "EPICS": {
         "TITLE": "エピック",
@@ -518,7 +525,7 @@
             "SELECT_VIDEOCONFERENCE": "ビデオ会議システムを選択",
             "SALT_CHAT_ROOM": "チャットルーム名に接頭辞を追加",
             "JITSI_CHAT_ROOM": "Jitsi",
-            "APPEARIN_CHAT_ROOM": "AppearIn",
+            "WHEREBYCOM_CHAT_ROOM": "Whereby.com",
             "TALKY_CHAT_ROOM": "Talky",
             "CUSTOM_CHAT_ROOM": "カスタム",
             "URL_CHAT_ROOM": "チャットルームのURL"
@@ -861,9 +868,9 @@
         "HELP": "最も良く使うプロジェクトがトップになるように順序を入れ替えてみましょう。<br/> トップ10のプロジェクトが上のナビゲーションバーのプロジェクトリストに現れます。",
         "PRIVATE": "プライベート プロジェクト",
         "LOOKING_FOR_PEOPLE": "プロジェクトはメンバーを探しています",
-        "FANS_COUNTER_TITLE": "{total, plural, one{one fan} other{# 人のファン}}",
-        "WATCHERS_COUNTER_TITLE": "{total, plural, one{one watcher} other{# 人がフォロー中}}",
-        "MEMBERS_COUNTER_TITLE": "{total, plural, one{one member} other{# 人のメンバー}}",
+        "FANS_COUNTER_TITLE": "{total, plural, 1{one fan} other{# 人のファン}}",
+        "WATCHERS_COUNTER_TITLE": "{total, plural, 1{one watcher} other{# 人がフォロー中}}",
+        "MEMBERS_COUNTER_TITLE": "{total, plural, 1{one member} other{# 人のメンバー}}",
         "BLOCKED_PROJECT": {
             "BLOCKED": "ブロックされたプロジェクト",
             "THIS_PROJECT_IS_BLOCKED": "このプロジェクトは一時的にブロックされています。",
@@ -907,13 +914,13 @@
             "LIKED": "いいね",
             "UNLIKE": "「いいね」を取り消す",
             "BUTTON_TITLE": "Like or unlike this project",
-            "COUNTER_TITLE": "{total, plural, one{one fan} other{# 人のファン}}"
+            "COUNTER_TITLE": "{total, plural, 1{one fan} other{# 人のファン}}"
         },
         "WATCH_BUTTON": {
             "BUTTON_TITLE": "このプロジェクトをフォローして通知ポリシーを設定してください",
             "WATCH": "フォロー",
             "WATCHING": "フォロー中",
-            "COUNTER_TITLE": "{total, plural, one{one watcher} other{# 人がフォロー中}}",
+            "COUNTER_TITLE": "{total, plural, 1{one watcher} other{# 人がフォロー中}}",
             "OPTIONS": {
                 "NOTIFY_ALL": "すべての通知を受信する",
                 "NOTIFY_ALL_TITLE": "このプロジェクトのすべての通知を受信する",
@@ -1088,6 +1095,11 @@
             "SELECT": "割り当てる",
             "SEARCH": "ユーザーを検索"
         },
+        "SELECT_USER": {
+            "SEARCH": "ユーザーを検索",
+            "REMOVE": "Remove user",
+            "ROLE": "役割"
+        },
         "ADD_MEMBER": {
             "TITLE": "新しいメンバー",
             "PLACEHOLDER": "ユーザーをフィルターまたは招待メールを書く",
@@ -1232,6 +1244,7 @@
         "PROMOTED_FROM_ISSUE": "このユーザーストーリーはこちらの課題から発展:",
         "PROMOTED_FROM_TASK": "This US has been promoted from Task:",
         "TITLE_LINK_GO_TO_ISSUE": "課題へ移動",
+        "TITLE_LINK_GO_TO_TASK": "Go to task",
         "TITLE_DELETE_ACTION": "ユーザーストーリーを削除",
         "LIGHTBOX_TITLE_BLOKING_US": "Blocking us",
         "NOT_ESTIMATED": "見積もりが行われていません",
@@ -1424,12 +1437,12 @@
             "MOVE_TO_OPEN_SPRINT": "Move to open sprint",
             "NO_OPEN_SPRINTS": "There are no other open sprints. Please create one first.",
             "SELECT_DESTINATION_PLACEHOLDER": "Select destination",
-            "UNFINISHED_USER_STORIES_COUNT": "{total, plural, one{<strong>#</strong> unfinished user story} other{<strong>#</strong> unfinished user stories}}",
-            "UNFINISHED_STORYLESS_TASKS_COUNT": "{total, plural, one{<strong>#</strong> unfinished storyless task} other{<strong>#</strong> unfinished storyless tasks}}",
-            "UNFINISHED_ISSUES_COUNT": "{total, plural, one{<strong>#</strong> unfinished issue} other{<strong>#</strong> unfinished issue}}",
+            "UNFINISHED_USER_STORIES_COUNT": "{total, plural, 1{<strong>#</strong> unfinished user story} other{<strong>#</strong> unfinished user stories}}",
+            "UNFINISHED_STORYLESS_TASKS_COUNT": "{total, plural, 1{<strong>#</strong> unfinished storyless task} other{<strong>#</strong> unfinished storyless tasks}}",
+            "UNFINISHED_ISSUES_COUNT": "{total, plural, 1{<strong>#</strong> unfinished issue} other{<strong>#</strong> unfinished issue}}",
             "WARNING_ISSUES_NOT_MOVED_TITLE": "You just moved all user stories and taks, and the sprint'll be closed",
             "WARNING_ISSUES_NOT_MOVED": "The issues'll remain in the sprint and don't be removed",
-            "WARNING_SPRINT_STILL_OPEN_TITLE": "{total, plural, one{You just moved # item!} other{You just moved # items!}}",
+            "WARNING_SPRINT_STILL_OPEN_TITLE": "{total, plural, 1{You just moved # item!} other{You just moved # items!}}",
             "WARNING_SPRINT_STILL_OPEN": "Please note that the sprint {{sprintName}} <strong>will remain open</strong> as long as it contains unfinished items."
         }
     },
@@ -1807,7 +1820,7 @@
         "PAGE_TITLE": "プロジェクトを探す - Taiga",
         "PAGE_DESCRIPTION": "検索できるTaigaの公開プロジェクトディレクトリ。バックログ、タイムライン、課題、そしてチームを探してみてください。最も人気な、あるいは活気のあるプロジェクトも見つけられます。カンバンやスクラムでフィルターしてみるのも良いかもしれません。",
         "DISCOVER_TITLE": "プロジェクトを探す",
-        "DISCOVER_SUBTITLE": "{projects, plural, one{One public project to discover} other{# 件のプロジェクトが見つかりました}}",
+        "DISCOVER_SUBTITLE": "{projects, plural, 1{One public project to discover} other{# 件のプロジェクトが見つかりました}}",
         "MOST_ACTIVE": "最も活発なプロジェクト",
         "MOST_ACTIVE_EMPTY": "アクティブなプロジェクトはまだありません。",
         "MOST_LIKED": "最も好まれているプロジェクト",
@@ -1833,19 +1846,5 @@
             "ACTION_TITLE": "検索",
             "RESULTS": "検索結果"
         }
-    },
-    "TIPS": {
-        "TIPS_TITLE": "Tip",
-        "TIP_PROJECTS_ORDER": "You can sort projects on your project page by placing the ones most frequently accessed at the top.",
-        "TIP_VOTING": "Whether you ask your community or your other team members, upvoting items might serve as a way to detect explicit support for a particular task or issue.",
-        "TIP_ISSUES_TO_SPRINT": "You can attach issues to a particular sprint by clicking on the pin icon in the detail view.",
-        "TIP_DUE_DATE": "If you need to finish a task on a specific date, activate the DueDate from the detail view of the task.",
-        "TIP_IOCAIN": "You can signal to team members that a task is being particularly troublesome by clicking on the iocaine button. Doing so indicates that you welcome help, patience and understanding.",
-        "TIP_BLOCKED": "You can signal to other team members that something is preventing you from working on a particular task by marking it as \"blocked\"",
-        "TIP_PROMOTE": "Is your issue or task more complex than it first appeared? Go to the detail view and turn it into user story.",
-        "TIP_BULK": "If you want to add many tasks at once, choose bulk mode and write each task in a single line, one after the other.",
-        "TIP_ZOOM": "You can get a wider view of the kanban by reducing the information shown on the cards with the zoom control.",
-        "TIP_CUSTOM_FIELDS": "If you're an admin of the project, consider creating custom fields to expand the tasks' configuration.",
-        "TIP_SLIDE_ARROWS": "You can cycle over the results of a list, search or filter by clicking on the navigational arrows on the detail view of any one item."
     }
 }
